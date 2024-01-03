@@ -1,0 +1,35 @@
+{
+  "name": "@techtile.yazilim/nest-s3-service",
+  "version": "1.0.1",
+  "description": "The aws-s3-service package provides a NestJS service for interacting with Amazon Simple Storage Service (S3). This service encapsulates common S3 operations, such as uploading, downloading, and deleting files. It integrates with the NestJS configuration module (@nestjs/config) to retrieve AWS credentials and region information securely.",
+  "main": "index.js",
+  "engines": {
+    "node": "v18.12.1"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublishOnly": "npm run build && npm run generate-declarations",
+    "main": "index.js",
+    "files": "dist/**/*",
+    "generate-declarations": "tsc --declaration --allowJs --emitDeclarationOnly"
+  },
+  "keywords": [
+    "nestjs",
+    "aws",
+    "s3"
+  ],
+  "author": "Techtile Yazilim A.S",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^3.1.1",
+    "aws-sdk": "^2.1528.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
