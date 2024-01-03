@@ -105,3 +105,10 @@ Make sure to replace 'your_bucket_name' with the actual name of your S3 bucket.
 
 License
 This package is open-source and available under the MIT License. Feel free to contribute, report issues, or suggest improvements.
+
+### VERSIONING
+
+- 1.0.0 First release
+- 1.0.1 Backward compatible bug fixes
+- 1.0.2 Backward compatible bug fixes
+  Version 1.0.2 introduces additional documentation for the AwsS3Service module. The documentation provides detailed information about the available methods, their parameters, and usage examples. You can find the documentation in the docs folder of the package.
